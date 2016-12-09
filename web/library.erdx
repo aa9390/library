@@ -1,0 +1,153 @@
+<?xml version="1.1" encoding="utf-8"?>
+<e:Document xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:e="http://exerd.tomato.com/model" xmlns:mysql="http://exerd.tomato.com/mysql/model" UUID="Document_syudkEnkEeaUhcP8x3ZzyQ"
+    activeBusinessArea="BArea_syudn0nkEeaUhcP8x3ZzyQ" activeSchema="Schema_syudoknkEeaUhcP8x3ZzyQ"
+    version="2.4.6.20160509-1715" product="com.tomato.db.mysql" openedDiagrams="Diagram_syudoEnkEeaUhcP8x3ZzyQ"><relationManager><relation
+        key="FKCGroup_NfPvf0nrEeaUhcP8x3ZzyQ"><value foreignKeyColumnGroup="FKCGroup_NfPvf0nrEeaUhcP8x3ZzyQ"
+          identifying="true"/></relation><relation key="FKCGroup_eK77fEqtEeaP6MGQK2jASg"><value
+          foreignKeyColumnGroup="FKCGroup_eK77fEqtEeaP6MGQK2jASg" identifying="true"/></relation></relationManager><configuration><domainDefinition
+        UUID="DDefinition_syudkUnkEeaUhcP8x3ZzyQ"><domain UUID="Domain_syudkknkEeaUhcP8x3ZzyQ"
+          name="문자" suggestedDataType="VARCHAR(255)"><domain UUID="Domain_syudk0nkEeaUhcP8x3ZzyQ"
+            name="주민등록번호" suggestedDataType="VARCHAR(13)"/><domain UUID="Domain_syudlEnkEeaUhcP8x3ZzyQ"
+            name="주소"/><domain UUID="Domain_syudlUnkEeaUhcP8x3ZzyQ" name="웹주소"/><domain
+            UUID="Domain_syudlknkEeaUhcP8x3ZzyQ" name="전화번호" suggestedDataType="VARCHAR(30)"/><domain
+            UUID="Domain_syudl0nkEeaUhcP8x3ZzyQ" name="이메일" suggestedDataType="VARCHAR(40)"/><domain
+            UUID="Domain_syudmEnkEeaUhcP8x3ZzyQ" name="이름" suggestedDataType="VARCHAR(50)"/></domain><domain
+          UUID="Domain_syudmUnkEeaUhcP8x3ZzyQ" name="숫자" suggestedDataType="INTEGER"><domain
+            UUID="Domain_syudmknkEeaUhcP8x3ZzyQ" name="금액"/></domain><domain UUID="Domain_syudm0nkEeaUhcP8x3ZzyQ"
+          name="일시" suggestedDataType="DATE"/><domain UUID="Domain_syudnEnkEeaUhcP8x3ZzyQ"
+          name="객체" suggestedDataType="BLOB"><domain UUID="Domain_syudnUnkEeaUhcP8x3ZzyQ"
+            name="이미지" suggestedDataType="VARBINARY"/><domain UUID="Domain_syudnknkEeaUhcP8x3ZzyQ"
+            name="오디오" suggestedDataType="VARBINARY"/></domain></domainDefinition><viewSettingsPreset
+        name="eXERD 기본" showAltTableName="false"><cellsToShow>name</cellsToShow><cellsToShow>domain</cellsToShow><cellsToShow>dataType</cellsToShow></viewSettingsPreset><viewSettingsPreset
+        name="엔티티 모드" showAltTableName="false"><cellsToShow>name</cellsToShow><cellsToShow>domain</cellsToShow></viewSettingsPreset><viewSettingsPreset
+        name="E-R 개요 모드" columnFilter="tableOnly" showTableComment="true"><cellsToShow>name</cellsToShow><cellsToShow>domain</cellsToShow><cellsToShow>dataType</cellsToShow></viewSettingsPreset><viewSettingsPreset
+        showColumnHeader="true" name="논리/물리 동시편집"><cellsToShow>name</cellsToShow><cellsToShow>oppositeModeName</cellsToShow><cellsToShow>domain</cellsToShow><cellsToShow>dataType</cellsToShow><cellsToShow>nullable</cellsToShow></viewSettingsPreset></configuration><businessAreas
+      UUID="BArea_syudn0nkEeaUhcP8x3ZzyQ" logicalName="기본 업무영역" physicalName="DEFAULT_AREA"
+      tables="Table_NfPvbEnrEeaUhcP8x3ZzyQ Table_ly7dGUnoEeaUhcP8x3ZzyQ Table_eK77fkqtEeaP6MGQK2jASg Table_eK77jkqtEeaP6MGQK2jASg"><diagrams
+        UUID="Diagram_syudoEnkEeaUhcP8x3ZzyQ" logicalName="다이어그램" physicalName="diagram"><diagramEntry
+          xsi:type="e:TableDiagram" UUID="TDiagram_NfPvZknrEeaUhcP8x3ZzyQ" location="Point(790, 170)"
+          table="Table_NfPvbEnrEeaUhcP8x3ZzyQ" theme="blueSky"/><diagramEntry xsi:type="e:TableDiagram"
+          UUID="TDiagram_NfPvZ0nrEeaUhcP8x3ZzyQ" location="Point(300, 140)" table="Table_ly7dGUnoEeaUhcP8x3ZzyQ"
+          theme="blueSky"/><diagramEntry xsi:type="e:TableDiagram" UUID="TDiagram_eK7UZkqtEeaP6MGQK2jASg"
+          location="Point(311, 498)" table="Table_eK77jkqtEeaP6MGQK2jASg"/><diagramEntry
+          xsi:type="e:Note" UUID="Note_eK7UZ0qtEeaP6MGQK2jASg" location="Point(918, 133)"
+          text="- 한 도서당 한명만이 쓸 수 있도록" backgroundColor="RGB {255, 255, 255}" baloonPoint="Point(99, 99)"/><viewSettings
+          showColumnHeader="true" showAltTableName="false"><cellsToShow>name</cellsToShow><cellsToShow>domain</cellsToShow><cellsToShow>dataType</cellsToShow></viewSettings><printSettings
+          marginTop="10" marginRight="10" marginBottom="10" marginLeft="10" paperKind="A4"
+          paperOrientation="landscape" header="${FILE} - ${DIAGRAM} - ${PAGENUM} / ${FULLPAGE}"
+          footter="${YEAR}-${MONTH}-${DAY} ${HOUR}:${DAY}"/></diagrams></businessAreas><databaseModel
+      UUID="DModel_syudoUnkEeaUhcP8x3ZzyQ" logicalName="새 데이터베이스" physicalName="NEW_DATABASE"><schema
+        UUID="Schema_syudoknkEeaUhcP8x3ZzyQ" logicalName="내 스키마" physicalName="MY_SCHEMA"><tables
+          UUID="Table_NfPvbEnrEeaUhcP8x3ZzyQ" logicalName="서평달기" physicalName="TABLE"><physicalProperties
+            xsi:type="mysql:TableProperties" UUID="TProperties_NfPvbUnrEeaUhcP8x3ZzyQ"><partition
+              UUID="Partition_NfPvbknrEeaUhcP8x3ZzyQ"><partitionAlgorithm UUID="PAlgorithm_NfPvb0nrEeaUhcP8x3ZzyQ"/><subpartitionAlgorithm
+                UUID="PAlgorithm_NfPvcEnrEeaUhcP8x3ZzyQ"/></partition></physicalProperties><columns
+            UUID="Column_NfPvcUnrEeaUhcP8x3ZzyQ" logicalName="ID" physicalName="COL6"
+            dataType="VARCHAR(10)"><memberships UUID="MEntry_NfPvcknrEeaUhcP8x3ZzyQ"
+              key="PKCGroup_NfPvfUnrEeaUhcP8x3ZzyQ"><value xsi:type="e:PrimaryKeyMembership"
+                UUID="PKMembership_NfPvc0nrEeaUhcP8x3ZzyQ" group="PKCGroup_NfPvfUnrEeaUhcP8x3ZzyQ"
+                entryIndex="1"/></memberships></columns><columns UUID="Column_NfPvdEnrEeaUhcP8x3ZzyQ"
+            logicalName="ISBN" physicalName="id2" dataType="INT(13)"><memberships
+              UUID="MEntry_NfPvdUnrEeaUhcP8x3ZzyQ" key="FKCGroup_NfPvf0nrEeaUhcP8x3ZzyQ"><value
+                xsi:type="e:ColumnReference" UUID="CReference_NfPvdknrEeaUhcP8x3ZzyQ"
+                group="FKCGroup_NfPvf0nrEeaUhcP8x3ZzyQ" parentColumn="Column_NfQWcEnrEeaUhcP8x3ZzyQ"/></memberships><memberships
+              UUID="MEntry_NfPvd0nrEeaUhcP8x3ZzyQ" key="PKCGroup_NfPvfUnrEeaUhcP8x3ZzyQ"><value
+                xsi:type="e:PrimaryKeyMembership" UUID="PKMembership_NfPveEnrEeaUhcP8x3ZzyQ"
+                group="PKCGroup_NfPvfUnrEeaUhcP8x3ZzyQ" entryIndex="0"/></memberships></columns><columns
+            UUID="Column_eK7UbEqtEeaP6MGQK2jASg" logicalName="NAME_OF_LIBRARY" physicalName="COL9"
+            derivedPhysicalName="true" derivedLogicalName="true" dataType="VARCHAR(50)"><memberships
+              UUID="MEntry_eK7UbUqtEeaP6MGQK2jASg" key="FKCGroup_NfPvf0nrEeaUhcP8x3ZzyQ"><value
+                xsi:type="e:ColumnReference" UUID="CReference_eK7UbkqtEeaP6MGQK2jASg"
+                group="FKCGroup_NfPvf0nrEeaUhcP8x3ZzyQ" parentColumn="Column_eK77cEqtEeaP6MGQK2jASg"/></memberships><memberships
+              UUID="MEntry_eK7Ub0qtEeaP6MGQK2jASg" key="PKCGroup_NfPvfUnrEeaUhcP8x3ZzyQ"><value
+                xsi:type="e:PrimaryKeyMembership" UUID="PKMembership_eK7UcEqtEeaP6MGQK2jASg"
+                group="PKCGroup_NfPvfUnrEeaUhcP8x3ZzyQ" entryIndex="1"/></memberships></columns><columns
+            UUID="Column_NfPveUnrEeaUhcP8x3ZzyQ" logicalName="TITLE" physicalName="COL"
+            dataType="VARCHAR(50)" notNull="TRUE"/><columns UUID="Column_NfPveknrEeaUhcP8x3ZzyQ"
+            logicalName="DATE" physicalName="COL4" dataType="INT(8)"/><columns UUID="Column_NfPve0nrEeaUhcP8x3ZzyQ"
+            logicalName="GRADE" physicalName="COL5" dataType="DOUBLE(0,5)"/><columns
+            UUID="Column_NfPvfEnrEeaUhcP8x3ZzyQ" logicalName="CONTENT" physicalName="COL7"
+            dataType="VARCHAR(100)"/><columnGroups xsi:type="e:PrimaryKeyColumnGroup"
+            UUID="PKCGroup_NfPvfUnrEeaUhcP8x3ZzyQ" logicalName="서평달기 기본키" physicalName="PK_TABLE"
+            derivedPhysicalName="true" derivedLogicalName="true"><primaryKeyConstraint
+              UUID="PKConstraint_NfPvfknrEeaUhcP8x3ZzyQ" logicalName="서평달기 기본키" physicalName="PK_TABLE"
+              derivedPhysicalName="true" derivedLogicalName="true"/></columnGroups><columnGroups
+            xsi:type="e:ForeignKeyColumnGroup" UUID="FKCGroup_NfPvf0nrEeaUhcP8x3ZzyQ"
+            logicalName="도서 -> 서평달기" physicalName="FK_TABLE2_TO_TABLE" derivedPhysicalName="true"
+            derivedLogicalName="true" parentColumnGroup="PKCGroup_ly7dF0noEeaUhcP8x3ZzyQ"><foreignKeyConstraint
+              UUID="FKConstraint_NfPvgEnrEeaUhcP8x3ZzyQ" logicalName="도서 -> 서평달기"
+              physicalName="FK_TABLE2_TO_TABLE" derivedPhysicalName="true" derivedLogicalName="true"/></columnGroups></tables><tables
+          UUID="Table_ly7dGUnoEeaUhcP8x3ZzyQ" logicalName="도서" physicalName="TABLE2"><physicalProperties
+            xsi:type="mysql:TableProperties" UUID="TProperties_NfPvgUnrEeaUhcP8x3ZzyQ"><partition
+              UUID="Partition_NfPvgknrEeaUhcP8x3ZzyQ"><partitionAlgorithm UUID="PAlgorithm_NfPvg0nrEeaUhcP8x3ZzyQ"/><subpartitionAlgorithm
+                UUID="PAlgorithm_NfPvhEnrEeaUhcP8x3ZzyQ"/></partition></physicalProperties><columns
+            UUID="Column_NfQWcEnrEeaUhcP8x3ZzyQ" logicalName="ISBN" physicalName="id"
+            dataType="INT(13)"><memberships UUID="MEntry_NfQWcUnrEeaUhcP8x3ZzyQ" key="PKCGroup_ly7dF0noEeaUhcP8x3ZzyQ"><value
+                xsi:type="e:PrimaryKeyMembership" UUID="PKMembership_NfQWcknrEeaUhcP8x3ZzyQ"
+                group="PKCGroup_ly7dF0noEeaUhcP8x3ZzyQ"/></memberships></columns><columns
+            UUID="Column_eK77cEqtEeaP6MGQK2jASg" logicalName="NAME_OF_LIBRARY" physicalName="COL9"
+            derivedLogicalName="true" dataType="VARCHAR(50)"><memberships UUID="MEntry_eK77cUqtEeaP6MGQK2jASg"
+              key="FKCGroup_eK77fEqtEeaP6MGQK2jASg"><value xsi:type="e:ColumnReference"
+                UUID="CReference_eK77ckqtEeaP6MGQK2jASg" group="FKCGroup_eK77fEqtEeaP6MGQK2jASg"
+                parentColumn="Column_eK77k0qtEeaP6MGQK2jASg"/></memberships><memberships
+              UUID="MEntry_eK77c0qtEeaP6MGQK2jASg" key="PKCGroup_ly7dF0noEeaUhcP8x3ZzyQ"><value
+                xsi:type="e:PrimaryKeyMembership" UUID="PKMembership_eK77dEqtEeaP6MGQK2jASg"
+                group="PKCGroup_ly7dF0noEeaUhcP8x3ZzyQ" entryIndex="0"/></memberships></columns><columns
+            UUID="Column_NfQWc0nrEeaUhcP8x3ZzyQ" logicalName="TITLE" physicalName="COL"
+            dataType="VARCHAR(50)"/><columns UUID="Column_eK77dUqtEeaP6MGQK2jASg"
+            logicalName="AUTHOR" physicalName="COL8" dataType="VARCHAR(30)"/><columns
+            UUID="Column_eK77dkqtEeaP6MGQK2jASg" logicalName="PAGE" physicalName="COL2"
+            dataType="INTEGER"/><columns UUID="Column_eK77d0qtEeaP6MGQK2jASg" logicalName="PRICE"
+            physicalName="COL3" dataType="INTEGER"/><columns UUID="Column_eK77eEqtEeaP6MGQK2jASg"
+            logicalName="PUBLISHER" physicalName="COL5" dataType="VARCHAR(50)"/><columns
+            UUID="Column_eK77eUqtEeaP6MGQK2jASg" logicalName="PUBLISHING_YEAR" physicalName="COL6"
+            dataType="INT"/><columns UUID="Column_eK77ekqtEeaP6MGQK2jASg" logicalName="REGISTRATION_NUMBER"
+            physicalName="COL7" dataType="INT"/><columns UUID="Column_eK77e0qtEeaP6MGQK2jASg"
+            logicalName="KDC" physicalName="COL4" dataType="VARCHAR(13)"/><columnGroups
+            xsi:type="e:PrimaryKeyColumnGroup" UUID="PKCGroup_ly7dF0noEeaUhcP8x3ZzyQ"
+            logicalName="도서 기본키" physicalName="PK_TABLE2" derivedPhysicalName="true"
+            derivedLogicalName="true"><primaryKeyConstraint UUID="PKConstraint_NfQWdEnrEeaUhcP8x3ZzyQ"
+              logicalName="도서 기본키" physicalName="PK_TABLE2" derivedPhysicalName="true"
+              derivedLogicalName="true"/></columnGroups><columnGroups xsi:type="e:ForeignKeyColumnGroup"
+            UUID="FKCGroup_eK77fEqtEeaP6MGQK2jASg" logicalName="도서관 -> 도서" physicalName="FK_TABLE4_TO_TABLE2"
+            derivedPhysicalName="true" derivedLogicalName="true" parentColumnGroup="PKCGroup_eK77l0qtEeaP6MGQK2jASg"><foreignKeyConstraint
+              UUID="FKConstraint_eK77fUqtEeaP6MGQK2jASg" logicalName="도서관 -> 도서" physicalName="FK_TABLE4_TO_TABLE2"
+              derivedPhysicalName="true" derivedLogicalName="true"/></columnGroups></tables><tables
+          UUID="Table_eK77fkqtEeaP6MGQK2jASg" logicalName="도서관찾기" physicalName="TABLE3"><physicalProperties
+            xsi:type="mysql:TableProperties" UUID="TProperties_eK77f0qtEeaP6MGQK2jASg"><partition
+              UUID="Partition_eK77gEqtEeaP6MGQK2jASg"><partitionAlgorithm UUID="PAlgorithm_eK77gUqtEeaP6MGQK2jASg"/><subpartitionAlgorithm
+                UUID="PAlgorithm_eK77gkqtEeaP6MGQK2jASg"/></partition></physicalProperties><columns
+            UUID="Column_eK77g0qtEeaP6MGQK2jASg" logicalName="ISBN" physicalName="id"
+            dataType="INT(13)"><memberships UUID="MEntry_eK77hEqtEeaP6MGQK2jASg" key="PKCGroup_eK77jEqtEeaP6MGQK2jASg"><value
+                xsi:type="e:PrimaryKeyMembership" UUID="PKMembership_eK77hUqtEeaP6MGQK2jASg"
+                group="PKCGroup_eK77jEqtEeaP6MGQK2jASg"/></memberships></columns><columns
+            UUID="Column_eK77hkqtEeaP6MGQK2jASg" logicalName="TITLE" physicalName="COL"
+            dataType="VARCHAR(50)"/><columns UUID="Column_eK77h0qtEeaP6MGQK2jASg"
+            logicalName="PAGE" physicalName="COL2" dataType="INTEGER"/><columns UUID="Column_eK77iEqtEeaP6MGQK2jASg"
+            logicalName="PRICE" physicalName="COL3" dataType="INTEGER"/><columns UUID="Column_eK77iUqtEeaP6MGQK2jASg"
+            logicalName="PUBLISHER" physicalName="COL5" dataType="VARCHAR(50)"/><columns
+            UUID="Column_eK77ikqtEeaP6MGQK2jASg" logicalName="PUBLISHING_YEAR" physicalName="COL6"
+            dataType="INT"/><columns UUID="Column_eK77i0qtEeaP6MGQK2jASg" logicalName="REGISTRATION_NUMBER"
+            physicalName="COL7" dataType="INT"/><columnGroups xsi:type="e:PrimaryKeyColumnGroup"
+            UUID="PKCGroup_eK77jEqtEeaP6MGQK2jASg" logicalName="도서관찾기 기본키" physicalName="PK_TABLE3"
+            derivedPhysicalName="true" derivedLogicalName="true"><primaryKeyConstraint
+              UUID="PKConstraint_eK77jUqtEeaP6MGQK2jASg" logicalName="도서관찾기 기본키" physicalName="PK_TABLE3"
+              derivedPhysicalName="true" derivedLogicalName="true"/></columnGroups></tables><tables
+          UUID="Table_eK77jkqtEeaP6MGQK2jASg" logicalName="도서관" physicalName="TABLE4"><physicalProperties
+            xsi:type="mysql:TableProperties" UUID="TProperties_eK77j0qtEeaP6MGQK2jASg"><partition
+              UUID="Partition_eK77kEqtEeaP6MGQK2jASg"><partitionAlgorithm UUID="PAlgorithm_eK77kUqtEeaP6MGQK2jASg"/><subpartitionAlgorithm
+                UUID="PAlgorithm_eK77kkqtEeaP6MGQK2jASg"/></partition></physicalProperties><columns
+            UUID="Column_eK77k0qtEeaP6MGQK2jASg" logicalName="NAME_OF_LIBRARY" physicalName="COL"
+            dataType="VARCHAR(50)"><memberships UUID="MEntry_eK77lEqtEeaP6MGQK2jASg"
+              key="PKCGroup_eK77l0qtEeaP6MGQK2jASg"><value xsi:type="e:PrimaryKeyMembership"
+                UUID="PKMembership_eK77lUqtEeaP6MGQK2jASg" group="PKCGroup_eK77l0qtEeaP6MGQK2jASg"
+                entryIndex="0"/></memberships></columns><columns UUID="Column_eK77lkqtEeaP6MGQK2jASg"
+            logicalName="LOCATION" physicalName="COL2" dataType="VARCHAR(60)"/><columnGroups
+            xsi:type="e:PrimaryKeyColumnGroup" UUID="PKCGroup_eK77l0qtEeaP6MGQK2jASg"
+            logicalName="도서관 기본키" physicalName="PK_TABLE4" derivedPhysicalName="true"
+            derivedLogicalName="true"><primaryKeyConstraint UUID="PKConstraint_eK77mEqtEeaP6MGQK2jASg"
+              logicalName="도서관 기본키" physicalName="PK_TABLE4" derivedPhysicalName="true"
+              derivedLogicalName="true"/></columnGroups></tables></schema></databaseModel><sharedIcons
+      UUID="SIcons_syudo0nkEeaUhcP8x3ZzyQ"/></e:Document>

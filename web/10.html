@@ -1,0 +1,211 @@
+
+<META HTTP-EQUIV="contentType" CONTENT="text/html;charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="ko">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <title>우리집 앞 도서관</title>
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="main.css">
+    
+<style>
+    #table{
+        position:absolute;
+        top:17%;
+        margin-left: 5%;
+        width: 90%;
+        height: 50%;
+    }
+    
+    .vertical {
+        display: table-cell;
+        vertical-align: middle;
+    }
+</style>    
+</head>
+    
+<body>
+    
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    
+                    <span class="sr-only">Toggle navigation</span>     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                
+                </button>
+                
+                <a class="navbar-brand" href="index.html">우리집 앞 도서관</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="6.html">도서찾기<span class="sr-only">(current)</span></a></li>
+                    <li><a href="2.html">도서관찾기</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">독자의견 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="active"><a href="12.html">서평</a></li>
+                            <li><a href="16.html">한줄의견</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="17.html">JOIN</a></li>
+                    <li><a href="18.html">LOGIN/OUT</a></li>
+                    <li><a href="#">MYPAGE</a></li>
+                </ul>    
+            </div>
+        </div>
+    </nav>
+    <!-- 드롭다운 -->
+    <div class="btn-group" style="margin:20 0 0 100">
+        <a href="#" class="btn btn-default">책 제목</a>
+        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span class="caret" style="margin:8 0"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="#">책 제목</a></li>
+            <li><a href="#">저자</a></li>
+            <li><a href="#">ISBN</a></li>
+        </ul>
+    </div>
+    
+    <!-- 검색 바 -->
+    <div class="form-group" style="margin:-34 100 0 200">
+        <div class="input-group">
+            <span class="input-group-addon"> <img src = "img/search.PNG" width="20" height="20"></span>
+            <input type="text" class="form-control">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button" style="margin:0 5">검색</button>
+            </span>
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button" data-toggle="modal" data-target="#myModal">상세검색</button>
+            </span>
+        </div>
+    </div>
+    
+      
+    <!-- 등록 -->    
+    <div class="vertical">
+        <table class="table table" id="table" widht="100%" height="100%">
+            <thead>
+            </thead>
+            <tbody>   
+                <tr height="30%" style="margin-top:30">
+                    <td width=10%><center><img src = "img/book.PNG" width="200" height="170" style="margin-top:30">
+                        <br><h4>책 제목</h4></center>
+                    </td>
+                    <td width=30%>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="inputDefault" placeholder="제목을 입력하세요" width="60%" style="margin-top:30">
+                        <textarea class="form-control" rows="5" id="textArea" placeholder="내용을 입력하세요" style="margin-top:30"></textarea>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">확인</button>
+                        </div>
+                    </td>
+                </tr>  
+            </tbody>   
+        </table> 
+    </div>
+    
+    
+      <!-- 팝업 --><!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><center>상세검색</center></h4>
+                </div>
+                <div class="modal-body">
+                    <!-- 내용 -->
+                    <p>
+                    <div class="btn-group open">
+                        <a class="btn btn-default" href="#" style="width:90px">제목</a>
+                        <a class="btn btn-default dropdown-toggle" aria-expanded="true" href="#" data-toggle="dropdown"><span class="caret" style="margin:8 0"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">제목</a></li>
+                            <li><a href="#">제목2</a></li>
+                            <li><a href="#">제목3</a></li>   
+                        </ul>            
+                    </div>
+                    
+                    <div class="btn-group open">
+                        <a class="btn btn-default" href="#" style="width:90px">일치검색</a>
+                        <a class="btn btn-default dropdown-toggle" aria-expanded="true" href="#" data-toggle="dropdown"><span class="caret" style="margin:8 0"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">일치검색</a></li>
+                            <li><a href="#">일치검색2</a></li>
+                            <li><a href="#">일치검색3</a></li>   
+                        </ul>            
+                    </div>
+                    
+                    <!-- 쓰기1 -->
+                    <div class="form-group" style="margin:-39 0 10 238" width="150px">
+                        <label class="control-label" for="inputDefault"></label>
+                        <input class="form-control" id="inputDefault" type="text">
+                    </div>
+                    
+                    <div class="btn-group open">
+                        <a class="btn btn-default" href="#" style="width:90px">AND</a>
+                        <a class="btn btn-default dropdown-toggle" aria-expanded="true" href="#" data-toggle="dropdown"><span class="caret" style="margin:8 0"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">OR</a></li>
+                        </ul>            
+                    </div>
+                    
+                    <br> <style="margin:10"></style>
+                    
+                    <div class="btn-group open" style="margin:10 0 0 0">
+                        <a class="btn btn-default" href="#" style="width:90px">전체</a>
+                        <a class="btn btn-default dropdown-toggle" aria-expanded="true" href="#" data-toggle="dropdown"><span class="caret" style="margin:8 0"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">전체2</a></li>
+                            <li><a href="#">전체3</a></li>   
+                        </ul>            
+                    </div>
+                    
+                    <div class="btn-group open" style="margin:10 0 0 0">
+                        <a class="btn btn-default" href="#" style="width:90px">키워드검색</a>
+                        <a class="btn btn-default dropdown-toggle" aria-expanded="true" href="#" data-toggle="dropdown"><span class="caret" style="margin:8 0"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">키워드검색</a></li>
+                            <li><a href="#">키워드검색2</a></li>
+                            <li><a href="#">키워드검색3</a></li>   
+                        </ul>            
+                    </div>
+                    
+                    <!-- 쓰기2 -->
+                    <div class="form-group" style="margin:-39 0 10 238" width="150px">
+                        <label class="control-label" for="inputDefault"></label>
+                        <input class="form-control" id="inputDefault" type="text">
+                    </div>
+                    
+                    <div class="btn-group open" style="margin:0 100 0 119">
+                        <a class="btn btn-default" href="#" style="width:90px">최근 1년</a>
+                        <a class="btn btn-default dropdown-toggle" aria-expanded="true" href="#" data-toggle="dropdown"><span class="caret" style="margin:8 0"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">최근 1년</a></li>
+                            <li><a href="#">최근 2년</a></li>
+                            <li><a href="#">최근 3년</a></li>   
+                        </ul>            
+                    </div>
+                    
+                    </p>
+                </div>
+
+</body>
+</html>

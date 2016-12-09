@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="euc-kr">
+	<title>지오로케이션 + 구글지도</title>
+	<script>
+	 function successCallback(position) { 
+	   var lat = position.coords.latitude;
+	   var lon = position.coords.longitude;
+	   var uri = "http://maps.google.co.kr/?q="+lat +","+lon;
+	   window.location = uri;
+	}
+	function errorCallback(err) {
+	 alert("위치 정보 취득 에러" + err.message);
+	}
+	function getGeoInfo(){
+	  if(navigator.geolocation) { navigator.geolocation.getCurrentPosition(successCallback, errorCallback); 
+	 }
+        else {
+	  alert("HTML 5 지오로케이션을 지원하지 못합니다.");
+	 }
+	}
+</script>
+</head>
+    <!-- 이벤트 핸들러 -->
+<body onload="getGeoInfo()"> 
+</body>
+</html>

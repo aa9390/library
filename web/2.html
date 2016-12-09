@@ -1,0 +1,88 @@
+
+<META HTTP-EQUIV="contentType" CONTENT="text/html;charset=UTF-8">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<html lang="ko">
+<head>
+<title>우리집 앞 도서관</title>
+    <style>
+    #Middle{
+     position:absolute;
+     width:250px;
+     height:200px;
+     z-index:15;
+     top:30%;
+     left:50%;
+     margin:-100px 0 0 -130px;
+     background:url(img/Untitled-2.png)
+}
+    </style>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>우리집 앞 도서관</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <!-- 네비게이션 바 -->
+        <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">우리집 앞 도서관</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">도서찾기<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">도서관찾기</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">독자의견 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">서평</a></li>
+            <li><a href="#">한줄의견</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">HOME</a></li>
+                  <li><a href="#">JOIN</a></li>
+                  <li><a href="#">LOGIN/OUT</a></li>
+                  <li><a href="#">MYPAGE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        <!-- 로고 -->
+            <img src = "img/logo.png" id="Middle">
+        <!-- 드롭다운 -->
+        <div class="btn-group open" style="top:300">
+  <a href="#" class="btn btn-default">도서관 조회</a>
+  <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="#">도서관 조회</a></li>
+    <li><a href="#">도서 조회</a></li>
+  </ul>
+</div>
+        <!-- 검색 바 -->
+        <div class="form-group" style="margin-top:350">
+  <div class="input-group">
+    <span class="input-group-addon">$</span>
+    <input type="text" class="form-control">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button">Button</button>
+    </span>
+  </div>
+</div>
+    </body>
